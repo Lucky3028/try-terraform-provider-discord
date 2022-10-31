@@ -1,4 +1,4 @@
-tterraform {
+terraform {
   required_providers {
     discord = {
       source  = "Lucky3028/discord"
