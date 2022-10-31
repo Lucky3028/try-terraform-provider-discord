@@ -19,6 +19,12 @@ provider "discord" {
   token = var.discord_bot_token
 }
 
+variable "discord_bot_token" {
+  type        = string
+  description = "Token of the discord bot."
+  sensitive   = true
+}
+
 resource "discord_server" "server" {
   name                          = "Kagerou"
   region                        = "japan"
