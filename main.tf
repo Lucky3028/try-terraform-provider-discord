@@ -18,3 +18,12 @@ terraform {
 provider "discord" {
   token = var.discord_bot_token
 }
+
+resource "discord_server" "server" {
+  name                          = "Kagerou"
+  region                        = "japan"
+  default_message_notifications = 1
+  explicit_content_filter       = 2
+  verification_level            = 4
+  icon_url                      = "https://github.com/Lucky3028/try-terraform-provider-discord/blob/main/server_icon.jpeg?raw=true"
+}
