@@ -17,6 +17,8 @@ jobs:
           cli_config_credentials_token: ${{ env.TF_API_TOKEN }}
       - name: Terraform fmt
         run: terraform fmt -check
+      - name: Terraform Init
+        run: terraform init
       - name: Validate .tf files
         run: terraform validate -no-color
       - name: Plan Terraform infrastructure changes
