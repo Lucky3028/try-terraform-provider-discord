@@ -2,15 +2,7 @@ terraform {
   required_providers {
     discord = {
       source  = "Lucky3028/discord"
-      version = "1.1.2"
-    }
-  }
-
-  cloud {
-    organization = "lucky3028"
-
-    workspaces {
-      name = "Kagerou"
+      version = ">=1.0.0"
     }
   }
 }
